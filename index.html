@@ -3,104 +3,1760 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-   <link rel="stylesheet" href="css/style.css">
+    <meta
+        name="description"
+        content="Ishen Thilochana - Computer Science Undergraduate, Developer and UI/UX Designer Portfolio"
+    >
+
+    <title>Ishen Thilochana | Portfolio</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
+
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <header class="header">
+<!-- =========================================
+     NAVBAR
+========================================= -->
 
-        <nav class="navbar">
+<header class="header">
 
-            <a href="#home" class="logo">
-                Portfolio<span>.</span>
+    <nav class="navbar">
+
+        <!-- LOGO -->
+
+        <a href="#home" class="logo">
+            Portfolio<span>.</span>
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="#designs" class="nav-link">
+                    UI/UX
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================
+     HOME
+========================================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <!-- LEFT SIDE -->
+
+    <div class="hero-content">
+
+        <p class="intro">
+            Hello, I'm
+        </p>
+
+
+        <h1>
+            Ishen Thilochana
+        </h1>
+
+
+        <h2>
+            Computer Science Undergraduate
+            <span>& UI/UX Designer</span>
+        </h2>
+
+
+        <p class="description">
+
+            I enjoy creating clean digital experiences and
+            developing modern, user-friendly applications.
+
+            I combine design and technology to turn ideas
+            into meaningful digital products.
+
+        </p>
+
+
+        <!-- BUTTONS -->
+
+        <div class="hero-buttons">
+
+            <a
+                href="#projects"
+                class="btn primary-btn"
+            >
+                View My Work
             </a>
 
-           <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="designs.html">UI/UX</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
 
-        </nav>
+            <a
+                href="#contact"
+                class="btn outline-btn"
+            >
+                Contact Me
+            </a>
 
-    </header>
+        </div>
+
+    </div>
 
 
-    <!-- ================= HOME ================= -->
 
-    <main>
+    <!-- RIGHT SIDE -->
 
-        <section class="hero" id="home">
+    <div class="hero-visual">
 
-            <div class="hero-content">
+        <div class="visual-circle">
 
-                <p class="intro">
-                    Hello, I'm
-                </p>
+            <span>UI</span>
 
-                <h1>
-                    Ishen Thilochana
-                </h1>
+            <span>UX</span>
+
+            <span>DEV</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ABOUT
+========================================= -->
+
+<section
+    class="about-page"
+    id="about"
+>
+
+
+    <!-- SECTION TITLE -->
+
+    <div class="section-title">
+
+        <p>
+            Get To Know Me
+        </p>
+
+        <h1>
+            About Me
+        </h1>
+
+    </div>
+
+
+
+    <div class="about-container">
+
+
+        <!-- PROFILE IMAGE -->
+
+        <div class="about-image">
+
+            <div class="image-box">
+
+                <img
+                    src="images/profile.jpg"
+                    alt="Ishen Thilochana"
+                >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ABOUT CONTENT -->
+
+        <div class="about-content">
+
+
+            <p class="about-small-title">
+                Who am I?
+            </p>
+
+
+            <h2>
+                I'm Ishen Thilochana
+            </h2>
+
+
+            <p class="about-text">
+
+                I am a Computer Science undergraduate with
+                an interest in software development,
+                web development and UI/UX design.
+
+                I enjoy creating modern digital experiences
+                and turning ideas into practical,
+                user-friendly solutions.
+
+            </p>
+
+
+
+            <!-- ABOUT CARDS -->
+
+            <div class="about-info">
+
+
+                <div class="info-card">
+
+                    <span class="info-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Education
+                    </h3>
+
+                    <p>
+                        Computer Science Undergraduate
+                    </p>
+
+                </div>
+
+
+
+                <div class="info-card">
+
+                    <span class="info-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Focus
+                    </h3>
+
+                    <p>
+                        UI/UX Design & Software Development
+                    </p>
+
+                </div>
+
+
+
+                <div class="info-card">
+
+                    <span class="info-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Passion
+                    </h3>
+
+                    <p>
+                        Creating Modern Digital Experiences
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CV BUTTON -->
+
+            <a
+                href="assets/cv/resume.pdf"
+                class="btn primary-btn"
+                download
+            >
+                Download CV
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     SKILLS
+========================================= -->
+
+<section
+    class="skills-page"
+    id="skills"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            What I Know
+        </p>
+
+        <h1>
+            My Skills
+        </h1>
+
+    </div>
+
+
+
+    <div class="skills-container">
+
+
+        <!-- DEVELOPMENT -->
+
+        <div class="skill-category">
+
+
+            <div class="skill-category-header">
+
+                <span>
+                    01
+                </span>
 
                 <h2>
-                    Computer Science Undergraduate
-                    <span>& UI/UX Designer</span>
+                    Development
                 </h2>
 
-                <p class="description">
-                    I enjoy creating clean digital experiences and
-                    developing modern, user-friendly applications.
-                    I combine design and technology to turn ideas
-                    into meaningful digital products.
+            </div>
+
+
+
+            <div class="skills-grid">
+
+
+                <!-- HTML -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        HTML
+                    </h3>
+
+                    <div class="skill-bar">
+
+                        <div
+                            class="skill-progress html-progress"
+                        ></div>
+
+                    </div>
+
+                    <p>
+                        Web Structure
+                    </p>
+
+                </div>
+
+
+
+                <!-- CSS -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        CSS
+                    </h3>
+
+                    <div class="skill-bar">
+
+                        <div
+                            class="skill-progress css-progress"
+                        ></div>
+
+                    </div>
+
+                    <p>
+                        Responsive Design
+                    </p>
+
+                </div>
+
+
+
+                <!-- JAVASCRIPT -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <div class="skill-bar">
+
+                        <div
+                            class="skill-progress js-progress"
+                        ></div>
+
+                    </div>
+
+                    <p>
+                        Web Interactions
+                    </p>
+
+                </div>
+
+
+
+                <!-- JAVA -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Java
+                    </h3>
+
+                    <div class="skill-bar">
+
+                        <div
+                            class="skill-progress java-progress"
+                        ></div>
+
+                    </div>
+
+                    <p>
+                        Application Development
+                    </p>
+
+                </div>
+
+
+
+                <!-- C# -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        C# / .NET
+                    </h3>
+
+                    <div class="skill-bar">
+
+                        <div
+                            class="skill-progress csharp-progress"
+                        ></div>
+
+                    </div>
+
+                    <p>
+                        Backend Development
+                    </p>
+
+                </div>
+
+
+
+                <!-- PHP -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        PHP
+                    </h3>
+
+                    <div class="skill-bar">
+
+                        <div
+                            class="skill-progress php-progress"
+                        ></div>
+
+                    </div>
+
+                    <p>
+                        Web Development
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- UI UX -->
+
+        <div class="skill-category">
+
+
+            <div class="skill-category-header">
+
+                <span>
+                    02
+                </span>
+
+                <h2>
+                    UI/UX & Design
+                </h2>
+
+            </div>
+
+
+
+            <div class="tool-grid">
+
+
+                <div class="tool-card">
+
+                    <div class="tool-icon">
+                        F
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Figma
+                        </h3>
+
+                        <p>
+                            UI/UX Design & Prototyping
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="tool-card">
+
+                    <div class="tool-icon">
+                        UI
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            UI Design
+                        </h3>
+
+                        <p>
+                            Modern Interface Design
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="tool-card">
+
+                    <div class="tool-icon">
+                        UX
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            UX Design
+                        </h3>
+
+                        <p>
+                            User-Centered Experiences
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="tool-card">
+
+                    <div class="tool-icon">
+                        P
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Prototyping
+                        </h3>
+
+                        <p>
+                            Interactive User Flows
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TOOLS -->
+
+        <div class="skill-category">
+
+
+            <div class="skill-category-header">
+
+                <span>
+                    03
+                </span>
+
+                <h2>
+                    Tools & Technologies
+                </h2>
+
+            </div>
+
+
+
+            <div class="technology-list">
+
+                <span>Git</span>
+
+                <span>GitHub</span>
+
+                <span>VS Code</span>
+
+                <span>Visual Studio</span>
+
+                <span>IntelliJ IDEA</span>
+
+                <span>MySQL</span>
+
+                <span>React</span>
+
+                <span>Spring Boot</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PROJECTS
+========================================= -->
+
+<section
+    class="projects-page"
+    id="projects"
+>
+
+
+    <div class="section-title">
+
+        <p>
+            My Work
+        </p>
+
+        <h1>
+            Featured Projects
+        </h1>
+
+        <span class="section-description">
+
+            A collection of projects I have worked on,
+            combining software development,
+            web technologies and user-centered design.
+
+        </span>
+
+    </div>
+
+
+
+    <div class="projects-container">
+
+
+        <!-- =========================
+             PROJECT 01
+        ========================== -->
+
+        <article class="project-card">
+
+
+            <div class="project-image">
+
+                <img
+                    src="images/projects/avenza.jpg"
+                    alt="Avenza Studio Website"
+                >
+
+                <span class="project-number">
+                    01
+                </span>
+
+            </div>
+
+
+
+            <div class="project-content">
+
+
+                <p class="project-type">
+                    Web Development
                 </p>
 
 
-                <div class="hero-buttons">
+                <h2>
+                    Avenza Studio
+                </h2>
 
-                    <a href="#projects" class="btn primary-btn">
-                        View My Work
+
+                <p class="project-description">
+
+                    A modern photography and framing studio
+                    website designed to showcase services,
+                    galleries, pricing information and
+                    contact details through a clean and
+                    responsive user experience.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                </div>
+
+
+
+                <div class="project-links">
+
+
+                    <a
+                        href="#"
+                        class="project-btn primary-project-btn"
+                    >
+                        Live Demo
                     </a>
 
-                    <a href="#contact" class="btn outline-btn">
-                        Contact Me
+
+                    <a
+                        href="#"
+                        class="project-btn secondary-project-btn"
+                    >
+                        GitHub
                     </a>
+
 
                 </div>
 
             </div>
 
+        </article>
 
-            <!-- Right side decoration -->
 
-            <div class="hero-visual">
 
-                <div class="visual-circle">
+        <!-- =========================
+             PROJECT 02
+        ========================== -->
 
-                    <span>UI</span>
-                    <span>UX</span>
-                    <span>DEV</span>
+        <article class="project-card">
+
+
+            <div class="project-image">
+
+                <img
+                    src="images/projects/nexhire.jpg"
+                    alt="NexHire Recruitment Platform"
+                >
+
+                <span class="project-number">
+                    02
+                </span>
+
+            </div>
+
+
+
+            <div class="project-content">
+
+
+                <p class="project-type">
+                    Full Stack Development
+                </p>
+
+
+                <h2>
+                    NexHire
+                </h2>
+
+
+                <p class="project-description">
+
+                    An AI-powered recruitment and talent
+                    management platform designed to support
+                    candidates, recruiters and administrators
+                    throughout the recruitment process.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>React</span>
+
+                    <span>C#</span>
+
+                    <span>.NET</span>
+
+                </div>
+
+
+
+                <div class="project-links">
+
+
+                    <a
+                        href="#"
+                        class="project-btn primary-project-btn"
+                    >
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="project-btn secondary-project-btn"
+                    >
+                        GitHub
+                    </a>
+
 
                 </div>
 
             </div>
 
-        </section>
-
-    </main>
+        </article>
 
 
-    <script src="js/script.js"></script>
+
+        <!-- =========================
+             PROJECT 03
+        ========================== -->
+
+        <article class="project-card">
+
+
+            <div class="project-image">
+
+                <img
+                    src="images/projects/restaurant.jpg"
+                    alt="Restaurant Booking System"
+                >
+
+                <span class="project-number">
+                    03
+                </span>
+
+            </div>
+
+
+
+            <div class="project-content">
+
+
+                <p class="project-type">
+                    Web Application
+                </p>
+
+
+                <h2>
+                    Restaurant Booking System
+                </h2>
+
+
+                <p class="project-description">
+
+                    A restaurant reservation web application
+                    that allows customers to make table
+                    bookings while providing an administration
+                    interface for managing reservations.
+
+                </p>
+
+
+                <div class="project-tech">
+
+                    <span>PHP</span>
+
+                    <span>MySQL</span>
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                </div>
+
+
+
+                <div class="project-links">
+
+
+                    <a
+                        href="#"
+                        class="project-btn primary-project-btn"
+                    >
+                        View Project
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="project-btn secondary-project-btn"
+                    >
+                        GitHub
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     UI / UX DESIGNS
+========================================= -->
+
+<section
+    class="designs-page"
+    id="designs"
+>
+
+
+    <div class="section-title">
+
+
+        <p>
+            Creative Work
+        </p>
+
+
+        <h1>
+            UI/UX Designs
+        </h1>
+
+
+        <span class="section-description">
+
+            A selection of user interface and
+            user experience designs focused on
+            usability, accessibility and modern
+            digital experiences.
+
+        </span>
+
+
+    </div>
+
+
+
+    <div class="designs-container">
+
+
+        <!-- FEATURED DESIGN -->
+
+        <article class="featured-design">
+
+
+            <div class="featured-design-image">
+
+
+                <img
+                    src="images/designs/ecommerce.jpg"
+                    alt="Inclusive E-Commerce App"
+                >
+
+
+                <div class="design-label">
+                    Featured Project
+                </div>
+
+
+            </div>
+
+
+
+            <div class="featured-design-content">
+
+
+                <p class="design-type">
+                    Mobile App • UI/UX
+                </p>
+
+
+                <h2>
+                    Inclusive E-Commerce App
+                </h2>
+
+
+                <p>
+
+                    A mobile shopping experience designed
+                    with accessibility and inclusivity in mind.
+
+                    The interface focuses on simple navigation,
+                    readable layouts and user-friendly
+                    shopping experiences.
+
+                </p>
+
+
+
+                <div class="design-features">
+
+
+                    <span>
+                        Voice Search
+                    </span>
+
+
+                    <span>
+                        Accessibility
+                    </span>
+
+
+                    <span>
+                        Multi-Language
+                    </span>
+
+
+                    <span>
+                        Responsive UI
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="design-actions">
+
+
+                    <a
+                        href="#"
+                        class="project-btn primary-project-btn"
+                    >
+                        View Case Study
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="project-btn secondary-project-btn"
+                    >
+                        View Prototype
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             DESIGN GALLERY
+        ========================== -->
+
+
+        <div class="design-gallery-title">
+
+            <div>
+
+                <p>
+                    Selected Work
+                </p>
+
+                <h2>
+                    Design Gallery
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="design-grid">
+
+
+            <!-- DESIGN 01 -->
+
+            <article class="design-card">
+
+
+                <div class="design-card-image">
+
+
+                    <img
+                        src="images/designs/ecommerce-mobile.jpg"
+                        alt="E-Commerce Mobile Interface"
+                    >
+
+
+                    <div class="design-overlay">
+
+
+                        <span>
+                            Mobile UI
+                        </span>
+
+
+                        <h3>
+                            E-Commerce Interface
+                        </h3>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DESIGN 02 -->
+
+            <article class="design-card">
+
+
+                <div class="design-card-image">
+
+
+                    <img
+                        src="images/designs/login-ui.jpg"
+                        alt="Login Interface"
+                    >
+
+
+                    <div class="design-overlay">
+
+
+                        <span>
+                            UI Design
+                        </span>
+
+
+                        <h3>
+                            Login Experience
+                        </h3>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DESIGN 03 -->
+
+            <article class="design-card">
+
+
+                <div class="design-card-image">
+
+
+                    <img
+                        src="images/designs/accessibility.jpg"
+                        alt="Accessibility Settings"
+                    >
+
+
+                    <div class="design-overlay">
+
+
+                        <span>
+                            Accessibility
+                        </span>
+
+
+                        <h3>
+                            Accessibility Settings
+                        </h3>
+
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- =========================
+             DESIGN PROCESS
+        ========================== -->
+
+
+        <div class="design-process">
+
+
+            <div class="design-process-heading">
+
+
+                <p>
+                    How I Work
+                </p>
+
+
+                <h2>
+                    My Design Process
+                </h2>
+
+
+            </div>
+
+
+
+            <div class="process-grid">
+
+
+                <div class="process-card">
+
+
+                    <span>
+                        01
+                    </span>
+
+
+                    <h3>
+                        Research
+                    </h3>
+
+
+                    <p>
+                        Understand users,
+                        their needs and the problem.
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="process-card">
+
+
+                    <span>
+                        02
+                    </span>
+
+
+                    <h3>
+                        Wireframe
+                    </h3>
+
+
+                    <p>
+                        Plan layouts,
+                        user flows and information structure.
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="process-card">
+
+
+                    <span>
+                        03
+                    </span>
+
+
+                    <h3>
+                        Design
+                    </h3>
+
+
+                    <p>
+                        Create clean and consistent
+                        user interfaces.
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="process-card">
+
+
+                    <span>
+                        04
+                    </span>
+
+
+                    <h3>
+                        Prototype
+                    </h3>
+
+
+                    <p>
+                        Build interactive flows
+                        and test the experience.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     CONTACT
+========================================= -->
+
+<section
+    class="contact-page"
+    id="contact"
+>
+
+
+    <div class="section-title">
+
+
+        <p>
+            Let's Connect
+        </p>
+
+
+        <h1>
+            Contact Me
+        </h1>
+
+
+        <span class="section-description">
+
+            Have a project, opportunity or idea in mind?
+            Feel free to get in touch with me.
+
+        </span>
+
+
+    </div>
+
+
+
+    <div class="contact-container">
+
+
+        <!-- CONTACT INFO -->
+
+        <div class="contact-info">
+
+
+            <p class="contact-small-title">
+                Get In Touch
+            </p>
+
+
+            <h2>
+                Let's Build Something Great
+            </h2>
+
+
+            <p class="contact-description">
+
+                I'm always interested in learning,
+                collaborating and working on creative
+                technology and design projects.
+
+                You can reach me through email or
+                connect with me through my professional
+                profiles.
+
+            </p>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+
+                <div class="contact-icon">
+                    @
+                </div>
+
+
+                <div>
+
+
+                    <span>
+                        Email
+                    </span>
+
+
+                    <a
+                        href="mailto:your@email.com"
+                    >
+                        your@email.com
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- LINKEDIN -->
+
+            <div class="contact-item">
+
+
+                <div class="contact-icon">
+                    in
+                </div>
+
+
+                <div>
+
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Profile
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- GITHUB -->
+
+            <div class="contact-item">
+
+
+                <div class="contact-icon">
+                    GH
+                </div>
+
+
+                <div>
+
+
+                    <span>
+                        GitHub
+                    </span>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View GitHub
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="contact-form-wrapper">
+
+
+            <form
+                class="contact-form"
+                id="contactForm"
+            >
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                </div>
+
+
+
+                <!-- SUBJECT -->
+
+                <div class="form-group">
+
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter subject"
+                        required
+                    >
+
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+
+                    <label for="message">
+                        Message
+                    </label>
+
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+
+                </div>
+
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="contact-submit-btn"
+                >
+                    Send Message
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+
+    <div class="footer-container">
+
+
+        <a
+            href="#home"
+            class="footer-logo"
+        >
+            Portfolio<span>.</span>
+        </a>
+
+
+        <p>
+            Designed & Developed by Ishen Thilochana
+        </p>
+
+
+        <a
+            href="#home"
+            class="back-to-top"
+            aria-label="Back to top"
+        >
+            ↑
+        </a>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script src="js/script.js"></script>
+
 
 </body>
 
