@@ -148,58 +148,96 @@ window.addEventListener("load", revealOnScroll);
 
 
 /* =========================================
-   CONTACT FORM
+   CONTACT FORM - BACKEND
 ========================================= */
 
-const contactForm =
-    document.getElementById("contactForm");
-
+const contactForm = document.getElementById("contactForm");
+const submitBtn = document.getElementById("submitBtn");
+const formStatus = document.getElementById("formStatus");
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function (event) {
+    contactForm.addEventListener("submit", async function (event) {
 
         event.preventDefault();
 
-
-        const name =
-            document.getElementById("name").value.trim();
-
-        const email =
-            document.getElementById("email").value.trim();
-
-        const subject =
-            document.getElementById("subject").value.trim();
-
-        const message =
-            document.getElementById("message").value.trim();
-
+        const formData = {
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            subject: document.getElementById("subject").value.trim(),
+            message: document.getElementById("message").value.trim()
+        };
 
         if (
-            name === "" ||
-            email === "" ||
-            subject === "" ||
-            message === ""
+            !formData.name ||
+            !formData.email ||
+            !formData.subject ||
+            !formData.message
         ) {
-
-            alert("Please fill in all fields.");
-
+            formStatus.textContent = "Please fill in all fields.";
+            formStatus.className = "form-status error";
             return;
-
         }
 
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
 
-        alert(
-            "Thanks " +
-            name +
-            "! Your message has been received."
-        );
+        formStatus.textContent = "Sending your message...";
+        formStatus.className = "form-status sending";
 
+        try {
 
-        contactForm.reset();
+            const response = await fetch(
+                "http://localhost:5000/api/contact",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify(formData)
+                }
+            );
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+
+                formStatus.textContent =
+                    "Message sent successfully!";
+
+                formStatus.className =
+                    "form-status success";
+
+                contactForm.reset();
+
+            } else {
+
+                formStatus.textContent =
+                    data.message || "Failed to send message.";
+
+                formStatus.className =
+                    "form-status error";
+            }
+
+        } catch (error) {
+
+            console.error("Contact error:", error);
+
+            formStatus.textContent =
+                "Cannot connect to the server.";
+
+            formStatus.className =
+                "form-status error";
+
+        } finally {
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+        }
 
     });
-
 }
 
 

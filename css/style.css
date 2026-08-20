@@ -2423,3 +2423,26 @@ a {
     }
 
 }
+.form-status {
+    min-height: 22px;
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.form-status.sending {
+    color: #b7bdc8;
+}
+
+.form-status.success {
+    color: #62d394;
+}
+
+.form-status.error {
+    color: #ff7b7b;
+}
+
+.contact-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
