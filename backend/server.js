@@ -8,10 +8,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+
+// =========================================
+// ROOT ROUTE
+// =========================================
+
+app.get("/", (req, res) => {
+    res.send("Portfolio backend is running successfully.");
+});
 
 
-// Gmail connection
+// =========================================
+// GMAIL CONNECTION
+// =========================================
+
 const transporter = nodemailer.createTransport({
     service: "gmail",
 
@@ -22,10 +32,18 @@ const transporter = nodemailer.createTransport({
 });
 
 
-// Contact API
+// =========================================
+// CONTACT API
+// =========================================
+
 app.post("/api/contact", async (req, res) => {
 
-    const { name, email, subject, message } = req.body;
+    const {
+        name,
+        email,
+        subject,
+        message
+    } = req.body;
 
 
     if (!name || !email || !subject || !message) {
@@ -57,10 +75,11 @@ Email: ${email}
 Message:
 ${message}
             `
+
         });
 
 
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             message: "Message sent successfully!"
         });
@@ -70,7 +89,7 @@ ${message}
 
         console.error("Email error:", error);
 
-        res.status(500).json({
+        return res.status(500).json({
             success: false,
             message: "Failed to send message."
         });
@@ -79,5 +98,9 @@ ${message}
 
 });
 
+
+// =========================================
+// VERCEL EXPORT
+// =========================================
 
 module.exports = app;
