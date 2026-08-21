@@ -280,3 +280,56 @@ document.addEventListener("keydown", function (event) {
     }
 
 });
+/* =========================================
+   SKILL BAR SCROLL ANIMATION
+========================================= */
+
+const skillBars = document.querySelectorAll(".skill-progress");
+
+const skillsSection = document.querySelector("#skills");
+
+if (skillBars.length > 0 && skillsSection) {
+
+    const skillsObserver = new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    // Reset first
+                    skillBars.forEach((bar) => {
+                        bar.classList.remove("animate");
+                    });
+
+                    // Force browser reflow
+                    void skillsSection.offsetWidth;
+
+                    // Animate again
+                    skillBars.forEach((bar, index) => {
+
+                        setTimeout(() => {
+                            bar.classList.add("animate");
+                        }, index * 120);
+
+                    });
+
+                } else {
+
+                    // Reset when leaving Skills section
+                    skillBars.forEach((bar) => {
+                        bar.classList.remove("animate");
+                    });
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.25
+        }
+    );
+
+    skillsObserver.observe(skillsSection);
+}

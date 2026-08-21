@@ -901,7 +901,9 @@ a {
 }
 
 
-/* SKILL BAR */
+/* =========================================================
+   ANIMATED SKILL BARS
+   ========================================================= */
 
 .skill-bar {
     width: 100%;
@@ -914,7 +916,11 @@ a {
     overflow: hidden;
 }
 
+
+/* BAR STARTS FROM 0 */
+
 .skill-progress {
+    width: 0;
     height: 100%;
 
     background:
@@ -925,29 +931,38 @@ a {
         );
 
     border-radius: 20px;
+
+    transition:
+        width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-shadow:
+        0 0 12px rgba(212, 175, 55, 0.25);
 }
 
-.html-progress {
+
+/* FINAL VALUES - ONLY AFTER JS ADDS .animate */
+
+.skill-progress.html-progress.animate {
     width: 90%;
 }
 
-.css-progress {
+.skill-progress.css-progress.animate {
     width: 85%;
 }
 
-.js-progress {
+.skill-progress.js-progress.animate {
     width: 70%;
 }
 
-.java-progress {
+.skill-progress.java-progress.animate {
     width: 75%;
 }
 
-.csharp-progress {
+.skill-progress.csharp-progress.animate {
     width: 70%;
 }
 
-.php-progress {
+.skill-progress.php-progress.animate {
     width: 75%;
 }
 
